@@ -65,7 +65,7 @@ const Navigation = () => {
           }`}
       >
         <motion.div
-          className="glass rounded-full px-2 py-2 md:px-3 md:py-2 flex items-center justify-between md:justify-center md:gap-4"
+          className="bg-white/8 backdrop-blur-[24px] backdrop-saturate-[180%] border border-white/10 rounded-full px-2 py-2 md:px-3 md:py-2 flex items-center justify-between md:justify-center md:gap-4"
           whileHover={{ scale: 1.01 }}
           transition={{ type: "spring", stiffness: 400, damping: 30 }}
         >
