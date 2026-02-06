@@ -111,38 +111,40 @@
   }
 }
 
-/* Custom Utilities using v4 @utility directive */
-@utility glass {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
+/* Custom Utilities */
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
-@utility glass-pink {
-  background: rgba(255, 0, 127, 0.05);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 0, 127, 0.15);
-}
+  .glass-pink {
+    background: rgba(255, 0, 127, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 0, 127, 0.15);
+  }
 
-@utility text-gradient {
-  background: linear-gradient(135deg, #ff007f, #e1006a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+  .text-gradient {
+    background: linear-gradient(135deg, #ff007f, #e1006a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-@utility glow-pink {
-  box-shadow:
-    0 0 40px rgba(255, 0, 127, 0.3),
-    0 0 80px rgba(255, 0, 127, 0.1);
-}
+  .glow-pink {
+    box-shadow:
+      0 0 40px rgba(255, 0, 127, 0.3),
+      0 0 80px rgba(255, 0, 127, 0.1);
+  }
 
-@utility glow-pink-intense {
-  box-shadow:
-    0 0 60px rgba(255, 0, 127, 0.5),
-    0 0 120px rgba(255, 0, 127, 0.2);
+  .glow-pink-intense {
+    box-shadow:
+      0 0 60px rgba(255, 0, 127, 0.5),
+      0 0 120px rgba(255, 0, 127, 0.2);
+  }
 }
 
 /* Tailwind v4 Responsive Utilities */
